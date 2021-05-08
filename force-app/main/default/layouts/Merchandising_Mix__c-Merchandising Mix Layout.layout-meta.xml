@@ -15,8 +15,6 @@
                 <behavior>Edit</behavior>
                 <field>Season__c</field>
             </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Name</field>
@@ -24,6 +22,20 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Status__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CreatedById</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LastModifiedById</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -57,6 +69,9 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Merchandise__c.NAME</fields>
+        <fields>Merchandise__c.Price__c</fields>
+        <fields>Qty__c</fields>
         <relatedList>Mix_Item__c.Merchandising_Mix__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -65,7 +80,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0v000000Izp3</masterLabel>
+        <masterLabel>00h5C000000Htrs</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
